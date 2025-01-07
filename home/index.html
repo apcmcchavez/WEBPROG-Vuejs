@@ -1,14 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My first Vue page</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iyah Chavez' Personal Profile Web Page</title>
+
+    <link rel="stylesheet" href="css/mystyle.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
  
-<h1>Example with JavaScript inside {{ }}</h1>
- 
-<p>The 'message' text from the Vue instance is put together with another text and a JavaScript expression. The JavaScript expression creates a random integer between 1 and 6.</p>
+   <!-- Header -->
+   <header class="text-center bg-primary text-white py-3">
+    <h1>Iyah Chavez' Personal Profile Web Page</h1>
+</header>
+
+<!-- Main Container -->
+<div class="container my-5">
+    <div class="row g-4">
+        <!-- About Me -->
+        <div class="col-md-6 text-bg-light p-4 rounded">
+            <h2>About Me</h2>
+            <p>Hello, I am Mariyah Vanna Monique C. Chavez. You can just call me "Iyah". I am the eldest of 3 siblings and am from the province of Kawit, Cavite.</p>
+        </div>
+
+        <!-- Education Achievements -->
+        <div class="col-md-6 text-bg-light p-4 rounded">
+            <h2>Education Achievements</h2>
+            <ul>
+                <li>1st Year BSCS Student - Honors List, SoCIT (2023-2024)</li>
+                <li>Grade 12 - With Highest Honor & Best in Research Paper</li>
+                <li>Grade 11 - With High Honor</li>
+                <li>Grade 10 - With High Honor & Best in Research Paper</li>
+                <li>Grade 9 - With High Honor & Best in Research Paper</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row g-4 mt-4">
+        <!-- Course -->
+        <div class="col-md-6 text-bg-light p-4 rounded">
+            <h3>Course</h3>
+            <p>Currently, I am under the course BSCS-SS, Bachelor of Science in Computer Science with specialization in Software Systems at Asia Pacific College.</p>
+        </div>
+
+        <!-- IT Experience -->
+        <div class="col-md-6 text-bg-light p-4 rounded">
+            <h3>IT Experience</h3>
+            <p>Unfortunately, I do not have prior IT experience. The only exposure I have is from my first year of college under APC's Comp Sci course.</p>
+        </div>
+    </div>
+
+    <div class="row g-4 mt-4">
+        <!-- Hobbies and Interests -->
+        <div class="col-md-6 text-bg-light p-4 rounded">
+            <h3>Hobbies and Interests</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Hobby/Interest</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Games</td>
+                        <td>Valorant, Stardew Valley, Roblox, Honkai Star Rail, and more</td>
+                    </tr>
+                    <tr>
+                        <td>Arts and Crafts</td>
+                        <td>Painting, Mosaic, Collage Making</td>
+                    </tr>
+                    <tr>
+                        <td>Binge Watching</td>
+                        <td>Brooklyn Nine-nine, The Good Place, and others</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Goals in Life -->
+        <div class="col-md-6 text-bg-light p-4 rounded">
+            <h3>Goals in Life</h3>
+            <p>I want to be wealthy enough to indulge my wants while still providing for my family without worry.</p>
+        </div>
+    </div>
+
+    <!-- Picture Gallery -->
+    <div class="row g-4 mt-4">
+        <div class="col text-bg-light p-4 rounded">
+            <h3>Picture Gallery</h3>
+            <div class="d-flex flex-wrap gap-3">
+                <img src="images/Me and my Siblings.jpg" class="rounded img-fluid" alt="Me and my siblings" style="max-width: 150px;">
+                <img src="images/With my Girl Besties.jpg" class="rounded img-fluid" alt="Me with my besties" style="max-width: 150px;">
+                <img src="images/Me Painting.jpg" class="rounded img-fluid" alt="Me Painting" style="max-width: 150px;">
+                <img src="images/First time baking a cake.jpg" class="rounded img-fluid" alt="First Time Baking" style="max-width: 150px;">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center bg-primary text-white py-2">
+    <p>&copy; 2024 Asia Pacific College</p>
+</footer>
+
+
  
 <div id="app">
   {{ message }} <br>
