@@ -10,6 +10,7 @@
   
   <link rel="stylesheet" href="css/flexbox-grid.css?version-0.1">
   <link rel="stylesheet" href="css/bind.css?version-0.1">
+  <link rel="stylesheet" href="css/iamges.css?version-0.1">
  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
@@ -22,8 +23,20 @@
   <div v-bind:class="vueClass">This element is bound to the "pinkBG" class.</div>
 </div>
  
+  
+<div id="app2">
+  <div>
+    <figure v-for="x in manyFoods">
+      <img v-bind:src="x.url">
+      <figcaption>{{ x.name }}</figcaption>
+    </figure>
+  </div>
+</div>
+
+  
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="js/vue.js"></script>
+<script src="js/images.js"></script>
 
 
    <!-- Header -->
