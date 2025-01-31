@@ -18,9 +18,9 @@
 <template>
 
   <h1> Testing </h1>
-  <ul>
-    <li v-for="country in countries" :key="country.id">{{country,name}}</li>
-  </ul>
+    <ul>
+      <li v-for="country in countries" :key="country.id">{{ country.name }}</li>
+    </ul>
 
 
   <h1>Food</h1>
