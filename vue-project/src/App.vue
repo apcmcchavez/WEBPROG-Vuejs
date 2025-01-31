@@ -1,4 +1,4 @@
-<script setup>
+  <script setup>
   import { ref, onMounted } from 'vue'
   import { supabase } from './lib/supabaseClient'
 
@@ -12,7 +12,7 @@
   onMounted(() => {
     getCountries()
   })
-</script>
+  </script>
 
 
 <template>
