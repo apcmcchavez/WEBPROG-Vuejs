@@ -1,4 +1,4 @@
-  <script setup>
+<script setup>
   import { ref, onMounted } from 'vue'
   import { supabase } from './lib/supabaseClient'
 
@@ -12,13 +12,13 @@
   onMounted(() => {
     getCountries()
   })
-  </script>
+</script>
 
 
 <template>
-    <ul>
-      <li v-for="country in countries" :key="country.id">{{ country.name }}</li>
-    </ul>
+  <ul>
+    <li v-for="country in countries" :key="country.id">{{ country.name }}</li>
+  </ul>
 
   <h1>Food</h1>
   <personal-profile/> <br>
