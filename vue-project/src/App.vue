@@ -15,6 +15,7 @@
   </script>
 
 <template>
+  <h1> Heading </h1>
     <ul>
       <li v-for="instrument in instruments" :key="instrument.id">{{ instrument.name }}</li>
     </ul>
