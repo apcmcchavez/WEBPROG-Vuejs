@@ -15,7 +15,7 @@
   </script>
 
 <template>
-  <h1> Heading </h1>
+  <h1> Testing </h1>
     <ul>
       <li v-for="instrument in instruments" :key="instrument.id">{{ instrument.name }}</li>
     </ul>
