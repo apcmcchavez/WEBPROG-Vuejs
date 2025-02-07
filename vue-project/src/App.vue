@@ -4,17 +4,10 @@
 
   const instruments = ref([])
 
-async function getInstruments() {
-  try {
-    const { data, error } = await supabase.from('instruments').select()
-    if (error) throw error
-    console.log("Fetched instruments:", data) // Debugging log
+  async function getInstruments() {
+    const { data } = await supabase.from('instruments').select()
     instruments.value = data
-  } catch (err) {
-    console.error("Error fetching instruments:", err.message)
   }
-}
-
 
   onMounted(() => {
     getInstruments()
