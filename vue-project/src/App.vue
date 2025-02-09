@@ -1,4 +1,4 @@
-template>
+<template>
   <h1>Food</h1>
   <instruments/>
   <food-item/> <br>
